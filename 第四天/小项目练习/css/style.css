@@ -1,0 +1,65 @@
+/*将所有元素自带的margin和padding清除掉*/
+body,ul,p,li,a,div,h2{margin: 0;padding: 0}
+/*清除列表样式*/
+ul{list-style: none;}
+/*去掉a标签的下划线*/
+a{text-decoration: none;}
+/*去掉加粗样式*/
+h2{font-weight: normal;}
+/*字体在设置的时候，如果是短语和汉字要用引号包起来*/
+body{font-family: "Microsoft YaHei","宋体",Arial;}
+.content{
+    margin: 0 auto;
+    width:1204px;
+    /*background-color: antiquewhite;*/
+}
+.content ul{
+    margin-left: -65px;
+    font-size: 0;
+}
+.content li{
+    display: inline-block;
+    vertical-align: top;/*改变基线对齐方式*/
+    margin-left: 65px;
+    padding-top: 72px;
+    width: 251px;
+    height: 112px;
+    background-color: #cccccc;
+    font-size: 14px;
+    background-image: url("../images/pic.jpg");
+    background-repeat: no-repeat;/*图片不平铺*/
+    box-shadow: 2px 2px 10px #ccc ;
+    /*这是css3的属性*/
+    /*第一个值是X轴方向的*/
+    /*第二个值是y轴方向的*/
+    /*第三个值是模糊度*/
+    /*第四个值是投射半径*/
+    /*第五个值是阴影颜色*/
+    /*第六个值 不写默认是外部阴影，写了inset就是内部阴影*/
+}
+.title{
+    padding:22px 15px 0;
+    height:47px;
+    background-image:url(" ../images/bg.png");
+    line-height: 14px;
+}
+.title h2{
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+/*a不会继承父级元素文字颜色*/
+.title a{
+    color: #1e1e1e;
+}
+p{
+    padding: 0 13px 16px;
+    line-height:43px;
+    font-size: 12px;
+}
+.rmb{
+    color: #c71b1b;
+}
+.right{
+    color:#868484;
+    float: right;
+}

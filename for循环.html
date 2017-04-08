@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div>111</div>
+<script type="text/javascript">
+    function fn() {
+        var total=0
+        for(var n=0 ;n<arguments.length; n++){
+            var cur=arguments[n];
+            total+=cur
+        }
+        console.log(total)
+    }
+     var total=fn(1,2,3,4,5,6)
+    console.log(total)
+</script>
+</body>
+</html>

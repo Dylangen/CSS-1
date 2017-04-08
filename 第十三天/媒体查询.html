@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体查询</title>
+    <style>
+        .div1 {
+            height: 200px;
+            background-color: greenyellow;
+        }
+        .div2{
+            height: 200px ;
+            background-color: deepskyblue;
+        }
+        .div3{
+            height: 200px;
+            background-color: coral;
+        }
+        .div4{
+            height: 200px;
+            background-color: orange;
+        }
+
+
+        @media screen and (max-width: 800px) {
+            .div2 {
+                height: 300px;
+                float: left;
+                width: 50%;
+            }
+            .div3{
+                height: 300px;
+                float: right;
+                width: 50%;
+            }
+            .div4{
+                margin-top: 300px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+
+</body>
+</html>

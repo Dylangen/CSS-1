@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子层级</title>
+    <style>
+        .div1{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /*z-index: 1;*/
+        }
+        .p1{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 10;
+        }
+        .div2{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top:0;
+            left: 40px;
+            z-index: 1;
+        }
+        .p2{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">111
+    <p class="p1">222</p>
+</div>
+<div class="div2">333
+    <p class="p2">444</p>
+</div>
+</body>
+</html>

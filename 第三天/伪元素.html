@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div{width:300px;height:300px;background-color:red;}
+    span{font-size:32px;}
+    div:before{
+        display:block;
+        content:"";
+        font-size:40px;
+        color:white;
+        width:100px;height:100px;
+        background-color:yellow;
+
+    }
+    div:after{
+        display:block;
+        content:"我是after";
+        font-size:40px;
+        color:aqua;
+    }
+</style>
+<body>
+    <div>
+        <span>我是span</span>
+    </div>
+
+</body>
+</html>

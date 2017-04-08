@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+</head>
+<body>
+  <style>
+      h1{color:red;}
+  </style>
+  <h1>标签选择器</h1>
+
+
+
+  <style>
+      .title{color:blue;}
+  </style>
+  <h1 class="title">类选择器</h1>
+
+
+  <style>
+      #title{color:greenyellow;}
+  </style>
+  <h1 id="title">id选择器</h1>
+
+
+  <style>
+      [title]{color:saddlebrown;}
+  </style>
+  <h1 title="title">属性选择器</h1>
+
+
+  <style>
+      [title="title"]{color:royalblue;}
+  </style>
+  <h2 title="title">也是属性选择器</h2>
+
+
+  <style>
+      h2[title]{color:yellow;}/*交集选择器，本来“也是属性选择器”这段文字应该和“属性选择器”这段文字颜色相同，但是由于这个交集选择器权重比属性选择器大一点，所以“也是属性选择器”这段文字的颜色变成了黄色（这个交集选择器权重为：标签选择器+属性选择器=11，大于属性选择器的10）*/
+  </style>
+</body>
+</html>

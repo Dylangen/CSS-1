@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meat charset="UTF-8">
+    <title>开关灯效果</title>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    </style>
+    </meat>
+</head>
+<body id="bodyEle" style="blackgrould-color:white">
+
+   <script type="text/javascript">
+       var oBody=document.getElementById("bodyEle")
+       oBody.onclick=function(){
+           var bg=this.style.backgroundColor;
+           if(bg==="white"){
+               this .style.backgroundColor="black";
+           }else{
+               this.style.backgroundColor="white"
+           }
+       }
+   </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .counter {
+            counter-reset: wangxiaoer 112 wangxiaosan 3;
+            font-size: 24px; font-family: arial black;
+            color: #cd0000;
+        }
+        .counter:before { content: counter(wangxiaoer); }
+    </style>
+</head>
+<body>
+<img src="练习2/images/banner1.jpg" alt="qqqq"><img src="练习2/images/banner2.png" alt="qqqq">
+<br>
+<strong>我叫王小二，万万没想到，会出现另外一个数字：</strong>
+<p class="counter"></p>
+<strong>我是王小二，后面跟了个小三，我不认识他！</strong>
+</body>
+</html>

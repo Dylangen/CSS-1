@@ -1,0 +1,188 @@
+html{
+    overflow-x: hidden;
+    font-size: 100px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+}
+header{
+    height: 1.12rem;
+    position: relative;
+    box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
+    background-color: #2a2a2a;
+}
+header .logo{
+    position: relative;
+    z-index: 20;
+    float: left;
+    margin: 0.23rem 0 0 0.15rem;
+    width: 2.1rem;
+    height: 0.62rem;
+    background: url("../images/icon.png");
+    background-size: 5rem;
+}
+header span{
+    float: right;
+    margin: 0.4rem 0.23rem 0 0;
+    height: 0.32rem;
+    width: 0.36rem;
+    background: url("../images/icon.png");
+    background-size: 5rem;
+    background-position:-4.64rem 0;
+}
+header ul{
+    display: none;
+    font-size: 0.24rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 0.78rem 0.15rem 0;
+    background-color: #2a2a2a;
+    z-index: 10;
+}
+header li{
+    border-bottom: 0.01rem solid #464646;
+    line-height: 0.93rem;
+    text-align: center;
+}
+header li a{
+    color: #e0e0df;
+}
+header ul:after{
+    content: "+";
+    position: absolute;
+    top: 0.48rem;;
+    right: 0.26rem;
+    font-size: 0.3rem;
+    color: #e0e0df;
+    transform: rotate(45deg);
+}
+header div:hover ul{
+    display: block;
+}
+.banner{
+    position: relative;
+    height: 3.4rem;
+}
+.banner ul li{
+    display: none;
+    height: 100%;
+}
+.banner ul img{
+    height: 100%;
+    width: 100%;
+}
+.banner ul .first{
+    display: block;
+}
+.banner ol{
+    position: absolute;
+    bottom: 0.15rem;
+    left: calc(50% - 0.44rem);
+}
+.banner ol li{
+    float: left;
+    margin: 0 0.03rem;
+    border-radius: 50%;
+    width: 0.16rem;
+    height: 0.16rem;
+    background: #fff;
+}
+section{
+    padding:0.28rem 0.2rem 1.6rem;
+    background-color: #f8f8f8;
+}
+section div{
+    height: 0.35rem;
+    font-size: 0;
+}
+section .logo{
+    display: inline-block;
+    background: url("../images/icon.png") no-repeat;
+    background-size: 5rem;
+    background-position: 0 -0.83rem;
+    height: 0.35rem;
+    width: 0.29rem;
+    vertical-align: middle;
+    margin-right: 0.13rem;
+}
+section .title{
+    font-size: 0.26rem;
+    line-height: 0.35rem;
+    vertical-align: middle;
+    color: #4c4b4b;
+}
+section ul{
+    font-size: 0;
+    padding-bottom: 0.38rem;
+}
+section li{
+    height: 4.26rem;
+    margin-top:0.35rem;
+    text-align: center;
+    box-shadow: 0 0.02rem 0.03rem rgba(0,0,0,0.3);
+}
+section li img{
+    width: 100%;
+}
+section li a{
+    display: inline-block;
+    font-size: 0.28rem;
+    color:#777;
+    margin-top: 0.25rem;
+    margin-bottom: 0.16rem;
+}
+section li span{
+    display: block;
+    color:#ed3a3a;
+    font-size: 0.28rem;
+    margin-bottom: 0.3rem;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left:50%;
+    margin-left: -3.2rem;
+    width: 6.4rem;
+    border-top: 0.01rem solid #d5d5d5;
+    height: 0.62rem;
+    padding: 0.22rem 0;
+    background-color: white;
+}
+footer li{
+    float:left;
+    font-size: 0.16rem;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+footer li .img{
+    height: 0.5rem;
+    width: 0.5rem;
+    margin: 0 auto;
+    background: url("../images/icon.png") no-repeat;
+    background-size: 5rem;
+}
+footer ul .icon1{
+    background-position: 0.02rem -1.35rem;
+}
+footer ul .icon2{
+    background-position: -1.32rem  -1.38rem ;
+}
+footer ul .icon3{
+    background-position: -2.83rem -1.37rem;
+}
+footer li:hover .text{
+    color:#188ae4;
+}
+footer li:hover .icon1{
+    background-position: -0.62rem -1.35rem;
+}
+footer li:hover .icon2{
+    background-position: -2.03rem -1.38rem;
+}
+footer li:hover .icon3{
+    background-position: -3.55rem -1.37rem;
+}

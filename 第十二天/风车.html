@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>风车</title>
+    <style>
+        .box{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            border: 1px solid #5b5c5c;
+        }
+        /*.cent{*/
+            /*position: absolute;*/
+        /*}*/
+        .round{
+            position: absolute;
+            border-radius: 50%;
+            display: inline;
+            border: 40px solid;
+            border-color: green yellow red blue;
+            left: 210px;
+            top: 210px;
+            z-index: 100;
+            animation: turn 1s infinite linear;
+        }
+        #stick{
+            position: absolute;
+            top:50%;
+            left:calc(50% - 15px);
+            border-width:0 15px 200px 15px ;
+            border-color:transparent transparent darkgoldenrod transparent;
+            border-style: solid;
+        }
+        span[class*="item"]{
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-width: 40px 100px;
+            border-color: pink transparent transparent pink;
+            border-style: solid;
+            z-index: -1;
+        }
+        span:nth-of-type(2){
+            left: -140px;
+            top: 60px;
+            transform: rotate(90deg);
+            border-color: greenyellow transparent transparent greenyellow;
+        }
+        span:nth-of-type(3){
+            transform: rotate(180deg);
+            left: -200px;
+            top: -80px;
+            border-color: deepskyblue transparent transparent deepskyblue;
+        }
+        span:nth-of-type(4){
+            transform: rotate(270deg);
+            left: -60px;
+            top: -140px;
+            border-color: mediumorchid transparent transparent mediumorchid;
+        }
+        @keyframes turn {
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+        input:nth-of-type(1):focus ~ .round{
+            animation-play-state: paused;
+        }
+        input:nth-of-type(3):focus ~ .round{
+            animation-duration: 3s;
+        }
+        input:nth-of-type(4):focus ~ .round{
+            animation-duration: 0.2s;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <input type="button" value="暂停">
+    <input type="button" value="开始">
+    <input type="button" value="墨迹">
+    <input type="button" value="玩命">
+        <div class="round">
+             <span class="item"></span>
+             <span class="item"></span>
+             <span class="item"></span>
+             <span class="item"></span>
+        </div>
+    <p id="stick"></p>
+</div>
+</body>
+</html>
